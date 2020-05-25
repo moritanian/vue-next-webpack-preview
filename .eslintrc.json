@@ -8,7 +8,10 @@
   "plugins": [
     "@typescript-eslint"
   ],
-  "env": { "node": true, "es6": true },
+  "env": {
+    "node": true,
+    "es6": true
+  },
   "parser": "vue-eslint-parser",
   "parserOptions": {
     "parser": "@typescript-eslint/parser"
@@ -17,6 +20,16 @@
     "semi": "error",
     "vue/html-self-closing": "off",
     "vue/component-tags-order": "off",
-    "vue/singleline-html-element-content-newline": "off"
+    "vue/singleline-html-element-content-newline": "off",
+    "quotes": [
+      "warn",
+      "single"
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
+    ]
   }
 }
